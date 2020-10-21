@@ -10,7 +10,7 @@ pipeline {
     stage("Set Up") {
       steps {
         sh """
-          pip install ansible -y
+          pip install ansible
         """
       }//steps
     }//stage
