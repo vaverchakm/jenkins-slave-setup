@@ -1,7 +1,7 @@
 pipeline {
   agent {
     docker {
-       "ansible/ansible:default"
+       image "ansible/ansible:default"
        label "slave-builder"
        args '-u 0:0 -v /home/jenkins/.ssh:/root/.ssh'
      } //docker
@@ -40,3 +40,4 @@ pipeline {
     }//stage
   }//stages
 }//pipeline
+
