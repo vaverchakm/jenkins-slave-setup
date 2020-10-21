@@ -25,7 +25,7 @@ pipeline {
       steps {
         sh """
           ansible jenkins-slaves -m shell -a "cat /home/jenkins/.ssh/authorized_keys" -i inventory
-          ansible jenkins-slaves -m shell -a "ls /home/jenkins/jenkins_slaves" -i inventory
+          ansible jenkins-slaves -m shell -a "ls /home/jenkins/jenkins_slave" -i inventory
           ansible jenkins-slaves -m shell -a "id jenkins" -i inventory
         """
       }//steps
