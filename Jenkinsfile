@@ -35,7 +35,7 @@ pipeline {
       steps {
         sh """
           zip -r jenkins-slave-setup.zip .
-          scp jenkins-slave-setup.zip root@10.0.0.21:/var/www/html/my-repo
+          scp jenkins-slave-setup.zip root@10.0.0.21:/var/www/html/
         """
       }//steps
     }//stage
