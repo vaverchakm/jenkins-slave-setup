@@ -1,6 +1,6 @@
 ---
 - name: Set up jenkins slave machines
   hosts: jenkins-slaves
-  remote_user: root
+  remote_user: jenkins
   roles:
     - jenkins-slave-setup
